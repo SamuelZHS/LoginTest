@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <!--CSS-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+body{margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+    width: 100%;
+
+}
+.mainlogin{
+    width: 100vw;
+    height: 100vh;
+    background: #201b2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: flex;
+}
+
+.leftlogin{
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.leftlogin > h1{
+    color: rgb(250, 121, 0);
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: flex;
+   
+}
+
+.rightlogin{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnlogin{
+    width: 100%;
+    padding: 15px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 4px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    background: rgb(250, 142, 0);
+    cursor: pointer;
+    box-shadow: 0px  5px 20px -12px rgb(253, 228, 4);
+
+
+
+}
+
+.cardlogin{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #2f2412;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+
+}
+
+.cardlogin > h1{
+    color: rgb(250, 100, 0);
+    font-weight: 800px;
+    margin: 0;
+}
+
+.textfield{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.textfield > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #514869;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow:0px 10px 40px #00000056;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+.textfield > label ::placeholder{
+    color: #f0ffffde;
+    margin-bottom: 10px;
+}
+label{
+    color: white;
+    font-size: 12px;
+}
+    </style>
+</head>
+<body class="conteiner">
+    <div class="mainlogin">
+        <div class="leftlogin">
+            <div class="rightlogin">
+                <div class="cardlogin">
+                    <h1>LOGIN</h1>
+                    <div class="textfield">
+                        <label for="usuario">LOGIN</label>
+                        <input type="text" name="usuario" placeholder="Digite seu usuário">
+                    </div>
+                    <div class="textfield">
+                        <label for="password">SENHA</label>
+                        <input type="password" name="password" placeholder="Digite sua senha">
+                    </div>
+                 <button class="btnlogin">LOGIN</button> 
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
